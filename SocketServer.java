@@ -1,3 +1,7 @@
+/* Server.Java
+Author : Wenrui Li
+Last editing date: 12/1/2017
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,8 +43,6 @@ public class SocketServer extends Thread {
             server = new ServerSocket(PORT_NUMBER);
             while (true) {
                 client = new SocketServer(server.accept());
-                //System.out.println(client.getuser+"\r\n");
-                //System.out.println(client.getName()+"\r\n");
             }
         } catch (IOException ex) {
             System.out.println("Unable to start server.");
@@ -113,7 +115,6 @@ public class SocketServer extends Thread {
 		usernameAndpassword.add("test2.p000");
 		usernameAndpassword.add("test3.p000");
 		usernameAndpassword.add("test4.p000");
-		usernameAndpassword.add("wli7.p398");
 	}
 	
 	//HELLO method 
@@ -194,8 +195,6 @@ public class SocketServer extends Thread {
     		user = parts[1];
     		message = parts[2];
     		index = findUserIndex(user);//find the clients list index.
-    		//System.out.println(index);
-    		//System.out.println(clients.get(index));
     		if(index!=-1) {
     			clients.get(index).out.write(("FROM:"+getuser+":"+message+"\r\n").getBytes());//print out the message at receiver.
     		}
