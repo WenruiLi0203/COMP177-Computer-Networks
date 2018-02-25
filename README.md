@@ -8,4 +8,4 @@ This programming project is to create a TCP chat application (both client and se
 - Supporting shell connection
 - Using socket API
 
-*If you are UOP student, please don't copy and paste it. This code is only for studying uses. Wenrui Li all right reserved.
+*If you are UOP student, please don't copy and paste. This code is only for studying uses. Wenrui Li all right reserved.
