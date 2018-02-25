@@ -1,11 +1,11 @@
 # COMP177-Computer-Networking-Course
 UOP COMP177 Computer Networks Programming Project Fall 2017
 
-This programming project is written by Java.
+This programming project is written in Java.
 
-This programming project is to create a chat application for messaging others.
+This programming project is to create a TCP chat application (both client and server side)  for messaging others.
 - Supporting multiple clients
-- Using shell connection
+- Supporting shell connection
 - Using socket API
 
-If you are UOP student, please don't copy and paste it. Wenrui Li all right reserved.
+*If you are UOP student, please don't copy and paste it. This code is only for studying uses. Wenrui Li all right reserved.
