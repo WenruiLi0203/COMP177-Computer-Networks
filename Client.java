@@ -1,3 +1,8 @@
+/* Client.Java
+Author : Wenrui Li
+Last editing date: 11/20/2017
+*/
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -27,23 +32,13 @@ public class Client {
 	//connect to the server
 	public void connectServer() throws Exception {
 		stdIn =new BufferedReader(new InputStreamReader(System.in));
-		/*System.out.println("Please enter the server hostname:");
-		String hostName = stdIn.readLine();
-		System.out.println("Please enter the server port number:");
-		String portString = stdIn.readLine();
-		int port = Integer.parseInt(portString);
-		*/
 		try {
-			//socketClient = new Socket("cyberlab.pacific.edu",12000);
-			//socketClient = new Socket(hostName,port);
 			socketClient = new Socket("localhost",8006);
 			
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Invalid hostname/port number.");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -58,7 +53,6 @@ public class Client {
 					out.flush();
 					
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} 
 			};
@@ -103,8 +97,6 @@ public class Client {
 		inThread.start();
 		Thread.sleep(300);//delay for receiving server messages.
 		login();
-		//out.println("AUTH:wli7:p398");
-
 	}
 	
 	public void login() throws InterruptedException {
